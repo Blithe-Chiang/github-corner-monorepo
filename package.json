@@ -1,0 +1,11 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.25.1",
+    "eslint": "^8.17.0"
+  }
+}
