@@ -1,11 +1,11 @@
 {
   "name": "@vfup/github-corner",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Blithe-Chiang/github-corner"
+    "url": "https://github.com/Blithe-Chiang/github-corner-monorepo"
   },
   "publishConfig": {
     "access": "public",

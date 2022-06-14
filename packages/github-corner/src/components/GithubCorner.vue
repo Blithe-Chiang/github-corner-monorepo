@@ -23,7 +23,7 @@ const {
   },
   repo: {
     type: String,
-    default: 'Blithe-Chiang/github-corner',
+    default: 'Blithe-Chiang/github-corner-monorepo',
   },
   url: {
     type: String,
