@@ -1,4 +1,18 @@
-# github-corner based on vue 3
+# github-corner component in vue 3
+
+
+## usage
+
+```vue
+<script setup lang="ts">
+import { GithubCorner } from '@vfup/github-corner'
+</script>
+
+<template>
+  <GithubCorner />
+</template>
+
+```
 
 
 ## props
