@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import { copyFileSync } from 'fs'
+import { copyFileSync, existsSync, rmSync } from 'fs'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import vue from '@vitejs/plugin-vue'
@@ -34,6 +34,11 @@ export default defineConfig({
         const exportFile = resolve(__dirname, 'src/export.js')
         const distFile = resolve(__dirname, 'dist/index.d.ts')
         copyFileSync(exportFile, distFile)
+
+        // remove useless generated file
+        const unusedFile = resolve(__dirname, 'dist/favicon.ico')
+        if (existsSync(unusedFile))
+          rmSync(unusedFile)
       },
     }),
   ],
